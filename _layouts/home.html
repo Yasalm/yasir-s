@@ -3,16 +3,35 @@ layout: default
 ---
 
 <header>
-{% if site.theme_config.show_navbar == true %}
-  {% include horizontal_list.html collection=site.data.home.navbar_entries %}
-  <div class="dashed"></div>
-{% endif %}
+  {% if site.theme_config.show_navbar == true %}
+    {% include horizontal_list.html collection=site.data.home.navbar_entries %}
+    <div class="dashed"></div>
+  {% endif %}
 
-  <h1>{{ site.title }}</h1>
+  <div style="display: flex; align-items: center; margin-bottom: 20px;">
+    <img src="{{ site.baseurl }}/assets/images/profile.jpg" alt="{{ site.title }}" style="width:100px; height:100px; border-radius:50%; margin-right:20px; object-fit: cover; filter: grayscale(100%);">
+    <h1 style="margin: 0;">{{ site.title }}</h1>
+  </div>
+
   {% if site.theme_config.show_description == true %}
     <p>{{ site.description }}</p>
   {% endif %}
+  
 </header>
+
+<style>
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .dashed {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+</style>
+
 
 {{ content }}
 

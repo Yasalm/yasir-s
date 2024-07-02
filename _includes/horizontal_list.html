@@ -1,10 +1,31 @@
-<ul class="horizontal-list">
+<ul class="horizontal-list icon-list">
   {% for item in include.collection %}
-    <li>
-      <a href="{{ item.url }}">
-        {{ item.title }}
-      </a>
-      &nbsp;&nbsp;
-    </li>
+<li>
+  <a href="{{ item.url }}">
+    <img src="{{ item.image_path }}" alt="{{ item.title }}" class="icon"/>
+  </a>
+  &nbsp;&nbsp;
+</li>
   {% endfor %}
 </ul>
+
+<style>
+.icon-list {
+  list-style-type: none; /* Remove bullet points */
+  /*padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+  display: flex; /* Align items horizontally */
+  gap: 2px; /* Space between icons */
+}
+
+.icon-list li {
+  display: inline; /* Inline elements */
+}
+
+.icon {
+  width: 30px; /* Set the width of the icons */
+  height: 30px; /* Set the height of the icons */
+  filter: grayscale(100%);
+}
+
+</style>
