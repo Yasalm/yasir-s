@@ -6,7 +6,7 @@ categories: [blog]
 tags: [RAG, LLM, Clustering, Search]
 ---
 
-# Using LLMs to enhance search results on Jahez 
+### Case study on Jahez food items search 
 
 Jahez’s current item search system focuses on delivering exact matches for user queries, which works well for specific requests but falls short in supporting broader exploration or discovery. For instance, a search for “pepperoni pizza” might miss out on showcasing related options like other pizza varieties or complementary items that align with the user’s preferences.
 

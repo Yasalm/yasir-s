@@ -1,11 +1,11 @@
 navbar_entries:
-  - title: on github
-    url: http://www.linkedin.com/in/yasir-almutairi
-    image_path: /assets/images/LinkedIn_icon.png
+  - title: "on LinkedIn"
+    url:  "https://www.linkedin.com/in/yasir-almutairi/"
+    image_path: "/assets/images/linkedin_icon.png"
 
-  - title: on linkedin
-    url: https://github.com/Yasalm
-    image_path: /assets/images/Github icons.png
+  - title: "on GitHub"
+    url:  "https://github.com/Yasalm"
+    image_path: "/assets/images/github_icon.png"
 
 
 project_entries:

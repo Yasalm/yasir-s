@@ -1,7 +1,5 @@
 title: Yasir Almutairi
 author: Yasir Almutairi
-baseurl: "/yasir-s"  # This is important! It should match your repository name
-url: "https://yasalm.github.io"
 description: > # description of the site (multiple lines allowed)
   I'm Yasir, Senior data scientist @ GOSI, building machine learning and AI Products.
 permalink: /:slug

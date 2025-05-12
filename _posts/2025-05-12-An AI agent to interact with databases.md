@@ -29,7 +29,7 @@ In this post, I'll share my experience building an AI agent that can interact wi
 
 ## Agent Overview
 
-![Architecture Diagram](/assets/images/agent_tools.png)
+![Architecture Diagram]({{ '/assets/images/agent_tools.png' | relative_url }} )
 To ensure the agent has more context on the data it has instead of only passing schema we use an llm to generate documenation this happend when we connect a new source (database) we automatically generate metadata that is typically unavailable or outdated in large entrpsises, it aims to help the agent with more metadata on type of data it has access. And we generate them following this logic.
 for each table we generate:
    - **Bussines summary**: explaining the purpose and role of the table
