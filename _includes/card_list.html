@@ -2,7 +2,16 @@
   {% for item in include.collection %}
 
     <li class="card">
-      <a href={{ "/" | append: item.url | relative_url }}>
+      <a 
+        href="
+          {% if item.url contains '://' %}
+            {{ item.url }}
+          {% else %}
+            {{ item.url | relative_url }}
+          {% endif %}
+        "
+        {% if item.url contains '://' %} target="_blank" rel="noopener"{% endif %}
+        >
         <span class="header">
           {{ item.title }}
 
