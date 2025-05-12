@@ -9,10 +9,14 @@ navbar_entries:
 
 
 project_entries:
-  - title: Project 1
-    url: language-tests
-    desc: This is an example project, configured in _data/home.yml
+  - title: "QueryGPT: An AI Agent for Bussines Intelligence"
+    url: https://github.com/Yasalm/querygpt
+    desc: An AI Agent that can interact and run sql commands on databases and analyze its results
     highlight: WIP
+  - title: Using LLMs to enhance search 
+    url: /search-recommendation
+    desc: creating categories of food items and using LLMs to label clusters into food cusine names and offer those categories on search to users as a similar categories to explore
+    highlight: DONE
 
 
 footer_entries:
