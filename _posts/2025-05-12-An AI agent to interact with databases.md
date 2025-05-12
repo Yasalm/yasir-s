@@ -8,7 +8,7 @@ tags: [RAG, LLM, AI Agent, smolagents]
 
 The following video shows that agent invoking a set of tools (functions) to answer the question provided
 
-![Database Agent Demo]({{ '/assets/images/demo_clarity.min.gif' | relative_url }})
+![Database Agent Demo]({{ '/assets/images/demo_clarity.loop.gif' | relative_url }})
 
 
 ### Contents
