@@ -31,10 +31,12 @@ jobs:
           bundle install
 
       - name: Build
-        run: bundle exec jekyll build
+        env:
+          JEKYLL_ENV: production
+        run: bundle exec jekyll build --baseurl "/yasir-s"
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: _site  # Jekyll's default build output directory
+          folder: _site
           branch: gh-pages 
