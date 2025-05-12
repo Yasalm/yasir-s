@@ -186,8 +186,8 @@ the two functions of the agents are:
 ```json
     {
         "analysis":"...",
-        "sql": "...",
-        "description": "The explanation of the query"
+        "sql":"...",
+        "description":"The explanation of the query"
         }
 ```
 and to allow the agent to know which type of response to return we override the default system prompt and cusomtize the guideline on its final answer generation. the following snippet shows how it is done.
