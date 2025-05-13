@@ -12,12 +12,12 @@ The following video shows that agent invoking a set of tools (functions) to answ
 
 
 ### Contents
-- [Introduction](#introduction)
+- [Introduction!](#introduction)
 - [Agent Overview](#agent-overview)
 - [The Agent and Custom Structured Output](#the-agent-and-custom-structured-output)
 - [code](#code)
 
-## Introduction
+## Introduction!
 ****
 In this post, I'll share my experience building an AI agent that can interact with databases, generate SQL queries, and provide data insights. This project uses LLMs and smolagents framework to create an ai agent to interact with databases.
 
@@ -30,8 +30,18 @@ In this post, I'll share my experience building an AI agent that can interact wi
 
 ## Agent Overview
 
-![Architecture Diagram]({{ '/assets/images/agent_tools.png' | relative_url }} )
+![Architecture Diagram]({{ '/assets/images/agent_overview.png' | relative_url }} )
+
+the agent runs in a loop analyzing and desciding which tools to invokes to answer the user question, untill it reaches **max steps** or **it conclude it reached the answer the question**
+
+The agent has broader capablitiy to interact with databases and reach its goals. Below are tools with defintions.
+![ai agent tools]({{'/assets/images/ai_tools.png' | relative_url }})
+
+
 To ensure the agent has more context on the data it has instead of only passing schema we use an llm to generate documenation this happend when we connect a new source (database) we automatically generate metadata that is typically unavailable or outdated in large entrpsises, it aims to help the agent with more metadata on type of data it has access. And we generate them following this logic.
+![rag desc]({{'/assets/images/documenation_gen.png' | relative_url }})
+
+
 for each table we generate:
    - **Bussines summary**: explaining the purpose and role of the table
    - **Possible usage** scenarios for the table
